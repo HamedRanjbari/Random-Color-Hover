@@ -1,0 +1,45 @@
+:root {
+  --bgColor: #02021b;
+  --blueColor: #004471;
+  --purpleColor: #7e006b;
+  --grayColor: rgb(180, 180, 180);
+  --whiteColor: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: var(--bgColor);
+  color: var(--whiteColor);
+  height: 100vh;
+  overflow: hidden;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.row div {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2px black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
